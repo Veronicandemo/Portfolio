@@ -51,11 +51,11 @@ export default function Home() {
       )}
       <div className={classes.me}>
         <h1>Welcome to my world</h1>
-        <h2>Hey, I`m Veronica Ndemo </h2>
+        <h2>Hello, I`m Veronica Ndemo </h2>
         <h2 ref={workNameRef} className={classes.job_name}>
           {h1}
         </h2>
-        <h2>from Kenya.</h2>
+        {/* <h2>from Kenya.</h2> */}
         <div className={classes.heroImg}>
           {/* <Image alt="picture of veronica" src='./hero.jpg' width={200} height={200}/> */}
         </div>

@@ -6,7 +6,7 @@ import ProjectsCards from './ProjectsCards'
 export default function Project() {
   return (
     <div className={classes.projects} id="Projects">
-      <h2 className={classes.heading}>My Latest Projects</h2>
+      <h2 className={classes.heading}>My Projects</h2>
       <p className={classes.description}>
         Below is a list of the projects that I have done over the years
       </p>

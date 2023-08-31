@@ -1,12 +1,12 @@
 export const mainSkills = [
   {
-    title: 'Web and User interface design-Development',
-    skill: 'Website,web expriences',
+    title: 'Web and UI design-Development',
+    skill: 'JavaScript Tailwind CSS React.js Next.js  ',
   },
-  // {
-  //     title:'Application Developement',
-  //     skill:'High perfoming android and ios apps'
-  // }
+  {
+    title: 'User Experince Research',
+    skill: 'Ability to conduct user research to improve usability',
+  },
 ]
 
 export const awards = [
@@ -19,11 +19,11 @@ export const awards = [
 export const exprience = [
   {
     title: 'Lead Computer-Club Kenyatta University',
-    skill: '2022-present',
+    skill: '2022-current',
   },
   {
     title: 'Frontend engineer-Afrikanest',
-    skill: '2022-present',
+    skill: '2023-current',
   },
 ]
 export const eductionalBackground = [

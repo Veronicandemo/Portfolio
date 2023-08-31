@@ -1,37 +1,35 @@
-.form{
-    margin-top: 30px;
+.form {
+  margin-top: 30px;
 }
 .form input {
-    width: 100%;
-    margin-top: 20px;
-    border: 2px solid #444;
-    border-radius: 4px;
-    color: #eee;
-    outline: none;
-    padding: 10px 5px;
-    background-color:#111;
-    font-size: 20px;
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  color: #eee;
+  outline: none;
+  padding: 10px 5px;
+  background-color: #111;
+  font-size: 20px;
 }
-.form input::content{
-    background-color:#111;
-
+.form input::content {
+  background-color: #111;
 }
 
 .form textarea {
-    width: 100%;
-    margin-top: 20px;
-    background-color:#111;
-    border: none;
-    outline: none;
-    color: #eee;
-    padding: 10px 5px;
-    border: 2px solid #444;
-    border-radius: 4px;
-    font-size: 20px;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #111;
+  border: none;
+  outline: none;
+  color: #eee;
+  padding: 10px 5px;
+  border: 2px solid #444;
+  border-radius: 4px;
+  font-size: 20px;
 }
-@media only screen and (max-width:600px){
-    .form input{
-        width: 80%;
-    }
- 
+@media only screen and (max-width: 600px) {
+  .form input {
+    width: 80%;
+  }
 }

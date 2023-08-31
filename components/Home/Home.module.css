@@ -1,78 +1,71 @@
-.home{
-    background-color: #000;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    padding: 24px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.home {
+  background-color: #000;
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  padding: 24px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.me h1{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 1.2px;
-    opacity: .6;
+.me h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 1.2px;
+  opacity: 0.6;
 }
-.me h2{
-    font-weight: bolder;
-    color: #fff;
-    font-size: 52px;
-    line-height: 1.2;
-    opacity: .9;
-
+.me h2 {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 52px;
+  line-height: 1.2;
+  opacity: 0.9;
 }
-.job_name{
-    color:#f9004d !important;
+.job_name {
+  color: #f9004d !important;
 }
-.sideBar{
-    background-color: #111;
-    position: fixed;
-    top: 91px;
-    z-index: 99;
-    left: 0;
-    width: 40%;
-    height: 100%;
-    display: flex;
-    gap: 30px;
-    padding: 24px;
-    animation: sideBar  .28s ease-in-out;
-    display: none;
-    box-shadow: 1px 1px 10px #333;
-    
+.sideBar {
+  background-color: #111;
+  position: fixed;
+  top: 91px;
+  z-index: 99;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  gap: 30px;
+  padding: 24px;
+  animation: sideBar 0.28s ease-in-out;
+  display: none;
+  box-shadow: 1px 1px 10px #333;
 }
-.animate{
-
+.animate {
 }
 /* Media queries */
 @keyframes sideBar {
-    form{
-        transform: translateY(-20%);
-    }
-    to{
-        transform: translateY(0);
-    }
+  form {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
-@media only screen and (max-width:800px){
-    .sideBar{
-        display: block;
-    }
-  
-
+@media only screen and (max-width: 800px) {
+  .sideBar {
+    display: block;
+  }
 }
-@media only screen and (max-width:600px){
-    .sideBar{
-        display: block;
-    }
-   
-    .me h2{
-        font-size: 40px;
-    }
-  
+@media only screen and (max-width: 600px) {
+  .sideBar {
+    display: block;
+  }
 
+  .me h2 {
+    font-size: 40px;
+  }
 }
