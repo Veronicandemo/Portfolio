@@ -1,0 +1,44 @@
+.contact{
+    background-color: #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 96px;
+    padding: 96px 24px;
+    justify-content: center;
+    align-items: center;
+}
+.form h1{
+    color: #fff;
+    font-size: 60px;
+}
+.form p{
+    color: #888;
+    font-size: 18px;
+}
+.form p a{
+    color: #fff;
+    text-decoration: none;
+}
+.form button{
+    font-size:18px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #f9004d;
+    border: none;
+    text-transform: uppercase;
+    padding: 20px 35px;
+    border-radius: 4px;
+    transition: transform .28s;
+}
+.form button:hover{
+    border: 2px solid #f9004d;
+    background-color: #111;
+    transform: translateY(-4px);
+}
+@media only screen and (max-width:800px){
+    .sideBar{
+        display: block;
+    }
+  
+
+}

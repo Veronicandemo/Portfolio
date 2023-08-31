@@ -1,0 +1,48 @@
+.about {
+    background-color: #222;
+    height: 100%;
+    display: flex;
+    padding:96px 24px ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.description{
+    flex: 2;
+}
+.descriptionHeader{
+    color: #fff;
+    font-size: 48px;
+
+}
+.description p{
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.45;
+    /* letter-spacing: 1px; */
+    color: #fff;
+    opacity: 0.7;
+}
+.about_image_container{
+    align-self: center;
+    justify-self: center;
+    flex: 2;
+}
+.about_image_container img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:600px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .description p{
+        font-size: 18px;
+    }
+ 
+}

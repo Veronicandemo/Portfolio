@@ -1,0 +1,19 @@
+.link:link,
+.link:visited{
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1.1px;
+    height: 40px;
+
+}
+
+.bar{
+    background-color: #f9004d   ;
+    height: 3px;
+    border-radius: 2px;
+    margin-top: 1rem;
+}
+.hidden{
+    display: hidden;
+}

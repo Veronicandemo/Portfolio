@@ -1,0 +1,71 @@
+.container{
+    width: 400px;
+    height: 450px;
+    background-size: cover;
+    border-radius: 8px;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: 1;
+    transition: all .28s;
+    
+}
+.container::after{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0.1));
+    z-index: 2;
+    
+}
+/* .container::after:hover{
+    background: linear-gradient(to bottom ,rgba(0,0,0,0.8),rgba(0,0,0,0.1));
+
+} */
+.subContainer{
+    position:absolute;
+    bottom: 20%;
+    left: 27%;
+    z-index: 9;
+}
+.subContainer p{
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.7;
+}
+.heading{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 9;
+}
+.subContainer div{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.subContainer div a
+{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #666;
+    padding: 8px 20px;
+    border-radius: 8px;
+    transition: all .3s;
+}
+.subContainer div a:hover{
+    background-color: #f9004d;
+    border: 2px solid #f9004d;
+    transform: translateY(-4px);
+}
+@media only screen and (max-width:830px){
+    .container{
+        /* grid-template-columns: repeat(2,1fr); */
+        width: 300px;
+    }
+}
