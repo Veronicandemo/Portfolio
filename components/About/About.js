@@ -2,13 +2,13 @@ import React from 'react'
 import classes from './About.module.css'
 import Skills from './Background/Skills'
 import Image from 'next/image'
-import mypic from '../../public/veeprofile.jpg'
+import myprofile from '../../public/profile.jpg'
 export default function About() {
   return (
     <div className={classes.about} id="About">
       <div className={classes.about_image_container}>
         <Image
-          src={mypic}
+          src={myprofile}
           alt="Headshot of veronica ndemo"
           width="150px"
           height="100px"
