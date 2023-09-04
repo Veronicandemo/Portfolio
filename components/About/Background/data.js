@@ -16,7 +16,7 @@ export const awards = [
   },
 ]
 
-export const exprience = [
+export const experience = [
   {
     title: 'Lead Computer-Club Kenyatta University',
     skill: '2022-current',

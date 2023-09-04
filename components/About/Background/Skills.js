@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-const skills = ['Main skills', 'Awards', 'Exprience', 'Education']
-import { mainSkills, awards, exprience, eductionalBackground } from './data'
+const skills = ['Main skills', 'Awards', 'Experience', 'Education']
+import { mainSkills, awards, experience, eductionalBackground } from './data'
 import classes from './Skills.module.css'
 import Skill from './Skill'
 import SkillDescription from './SkillDescription'
@@ -12,8 +12,8 @@ export default function Skills() {
       setContent(mainSkills)
     } else if (par === 'Awards') {
       setContent(awards)
-    } else if (par === 'Exprience') {
-      setContent(exprience)
+    } else if (par === 'Experience') {
+      setContent(experience)
     } else {
       setContent(eductionalBackground)
     }
