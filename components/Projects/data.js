@@ -18,6 +18,6 @@ export const projects = [
     title: 'The Wild Oasis App',
     imageUrl:
       'https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg?auto=compress&cs=tinysrgb&w=600',
-    projectUrl: 'https://github.com/Veronicandemo/wild-oasis-app',
+    projectUrl: 'https://github.com/Veronicandemo/Wild-oasis-app',
   },
 ]

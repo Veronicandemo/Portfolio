@@ -44,18 +44,24 @@ export default function HireForm() {
         },
         (error) => {
           // show the user an error
-          console.log('Email not sent')
           toast.error('Message not sent ❌', {
-            position: 'top-center',
-
+            position: 'top-right',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
             theme: 'dark',
           })
         },
       )
-    setName('')
-    setEmail('')
-    setMessage('')
-    setSubject('')
+    setTimeout(() => {
+      setName('')
+      setEmail('')
+      setMessage('')
+      setSubject('')
+    }, 5000)
   }
 
   return (
