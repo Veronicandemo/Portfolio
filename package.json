@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@next/font": "13.4.7",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
