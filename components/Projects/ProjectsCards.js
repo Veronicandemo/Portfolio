@@ -23,7 +23,7 @@ export default function ProjectsCards({
         background: isHoveredOver
           ? `linear-gradient(to bottom,#f9004d,rgba(0,0,0,0.4)),url(${imageUrl})`
           : `url(${imageUrl})`,
-        transform:isHoveredOver?'scale(1.1)':'scale(1)'
+        transform: isHoveredOver ? "scale(1.1)" : "scale(1)",
       }}
       onMouseEnter={mouseEnterHandler}
       onMouseLeave={mouseLeaveHandler}
@@ -32,10 +32,11 @@ export default function ProjectsCards({
         <p>{subTitle}</p>
         <h2 className={classes.heading}>{heading}</h2>
         <div>
-          <a href={projectUrl} target="_blank" >
+          <a href={projectUrl} target="_blank">
             View Details
           </a>
         </div>
+        \
       </div>
     </div>
   );
