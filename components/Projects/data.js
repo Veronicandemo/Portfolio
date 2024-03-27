@@ -1,8 +1,8 @@
 export const projects = [
   {
-    subHeading: "Development",
-    title: "Afrikanest Web App",
-    projectUrl: "https://www.afrikanest.com/",
+    subHeading: "Live",
+    title: "Vatise Enterprise",
+    projectUrl: "https://vatiseenterprise.co.ke/",
     imageUrl:
       "https://media.istockphoto.com/id/471346427/photo/brand-new-one-family-house.jpg?b=1&s=612x612&w=0&k=20&c=EbTDdbYwYB4P43r2XUHxDtupcofpZQTIFB0aMGTacIo=",
   },
