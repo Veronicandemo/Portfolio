@@ -1,37 +1,50 @@
-import React, { useRef ,useContext, useState} from "react";
-import AppContext from "../store/AppContext";
-import NavLink from "@/utils/NavLink";
-import classes from "./Navigation.module.css";
-import SocialLinks from "@/utils/SocialLinks";
-import {FiMenu} from 'react-icons/fi'
-import {MdClose} from 'react-icons/md'
-
+import React, { useRef, useContext, useState } from 'react';
+import AppContext from '../store/AppContext';
+import NavLink from '@/utils/NavLink';
+import classes from './Navigation.module.css';
+import SocialLinks from '@/utils/SocialLinks';
+import { FiMenu } from 'react-icons/fi';
+import { MdClose } from 'react-icons/md';
+import Image from 'next/image';
+// import myprofile from '../../public/profile.jpg'
+import myprofile from '/public/profile.jpg';
 
 export default function Navigation() {
-  const [showMenu,setShowMenu]=useState(true)
+  const [showMenu, setShowMenu] = useState(true);
   //Creating contex
-  const ctx=useContext(AppContext)
-  function openSideBar(){
-    setShowMenu(false)
-    ctx.showSideBarHandler()
+  const ctx = useContext(AppContext);
+  function openSideBar() {
+    setShowMenu(false);
+    ctx.showSideBarHandler();
   }
-  function closeMenuHandler(){
-    setShowMenu(true)
-    ctx.hideSideBar()
+  function closeMenuHandler() {
+    setShowMenu(true);
+    ctx.hideSideBar();
   }
- 
+
   const linksInput = useRef();
   return (
-    <div className={ctx.homeIsIntersecting?classes.navigation_fixed:classes.navigation}>
+    <div
+      className={
+        ctx.homeIsIntersecting ? classes.navigation_fixed : classes.navigation
+      }
+    >
       <div className={classes.menuIcons}>
-        {showMenu?<FiMenu className={classes.icon} onClick={openSideBar}/>:<MdClose className={classes.icon} onClick={closeMenuHandler}/>}
+        {showMenu ? (
+          <FiMenu className={classes.icon} onClick={openSideBar} />
+        ) : (
+          <MdClose className={classes.icon} onClick={closeMenuHandler} />
+        )}
+      </div>
+      <div>
+        <Image src={myprofile} className={classes.icon} alt='logo icon' />
       </div>
       <div ref={linksInput} className={classes.nav_links}>
-        <NavLink href="#" >Home</NavLink>
-        <NavLink href="#" >About</NavLink>
-        <NavLink href="#">Service</NavLink>
-        <NavLink href="#" >Projects</NavLink>
-        <NavLink href="#" >Contact</NavLink>
+        <NavLink href='#'>Home</NavLink>
+        <NavLink href='#'>About</NavLink>
+        <NavLink href='#'>Service</NavLink>
+        <NavLink href='#'>Projects</NavLink>
+        <NavLink href='#'>Contact</NavLink>
       </div>
       <div className={classes.soccial_links}>
         <SocialLinks />

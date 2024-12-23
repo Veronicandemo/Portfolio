@@ -1,20 +1,13 @@
 export const mainSkills = [
   {
-    title: 'Web and UI design-Development',
-    skill: 'JavaScript Tailwind CSS React.js Next.js  ',
+    title: 'Frontend Development',
+    skill: 'Tailwind CSS, JavaScript, React.js, Next.js ',
   },
   {
-    title: 'User Experince Research',
-    skill: 'Ability to conduct user research to improve usability',
+    title: 'Backend Development',
+    skill: 'Python, Go',
   },
-]
-
-export const awards = [
-  {
-    title: 'Employee of the Year',
-    skill: 'Afrikanest',
-  },
-]
+];
 
 export const experience = [
   {
@@ -25,7 +18,15 @@ export const experience = [
     title: 'Frontend engineer-Afrikanest',
     skill: '2023-current',
   },
-]
+  {
+    title: 'Software Engineering Intern - Twiga Foods ',
+    skill: 'May 2024 - November 2024',
+  },
+  {
+    title: 'Software Engineer - Auggie ',
+    skill: 'December 2024 - Current',
+  },
+];
 export const eductionalBackground = [
   {
     title: 'Secondary school-Ulanda Girls High School',
@@ -35,4 +36,4 @@ export const eductionalBackground = [
     title: 'BSc Mathematics and Computer Science-KU',
     skill: '2021-current',
   },
-]
+];

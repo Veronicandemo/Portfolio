@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import classes from "./Card.module.css";
+import React, { useState } from 'react';
+import classes from './Card.module.css';
 
 export default function Card({ heading, Icon, description }) {
   const [changeColor, setChangeColor] = useState(false);
@@ -12,9 +12,11 @@ export default function Card({ heading, Icon, description }) {
   return (
     <div
       className={classes.card}
-      style={{  
-        background: changeColor ? "linear-gradient(to left,#fa1a5f,#64001f)" : "#333",
-        transition: "all .3s",
+      style={{
+        background: changeColor
+          ? 'linear-gradient(to left,#F3375C,#64001f)'
+          : '#333',
+        transition: 'all .3s',
       }}
       onMouseEnter={mouseEnterHandler}
       onMouseLeave={mouseLeaveHandler}
@@ -22,12 +24,12 @@ export default function Card({ heading, Icon, description }) {
       <Icon
         className={classes.icon}
         style={{
-          color: changeColor ? "#fff" : "#f9004d",
-          transition: "all .3s",
+          color: changeColor ? '#E4DAFC' : '#F3375C',
+          transition: 'all .3s',
         }}
       />
       <h2>{heading}</h2>
-      <p style={{ opacity: changeColor ? "1" : "0.7" }}>{description}</p>
+      <p style={{ opacity: changeColor ? '1' : '0.7' }}>{description}</p>
     </div>
   );
 }

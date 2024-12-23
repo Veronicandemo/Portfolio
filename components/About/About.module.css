@@ -1,5 +1,5 @@
 .about {
-  background-color: #222;
+  background-color: #222222;
   height: 50%;
   display: flex;
   gap: 5%;
@@ -13,7 +13,7 @@
   flex: 2;
 }
 .descriptionHeader {
-  color: #fff;
+  color: #e4dafc;
   font-size: 48px;
 }
 .description p {
@@ -21,7 +21,7 @@
   font-weight: 100;
   line-height: 1.45;
   /* letter-spacing: 1px; */
-  color: #fff;
+  color: #eae7f1;
   opacity: 0.7;
 }
 .about_image_container {

@@ -1,9 +1,10 @@
 .home {
-  background-color: #000;
+  background-color: #000000;
   display: flex;
-  height: 60vh;
+  justify-content: center;
   align-items: center;
-  padding: 24px;
+  height: 50vh;
+  padding: 16px 24px 24px 24px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -11,23 +12,34 @@
   position: relative;
 }
 
+.me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 .me h1 {
-  color: #fff;
+  color: #e4dafc;
   text-transform: uppercase;
   font-weight: normal;
   letter-spacing: 1.2px;
   opacity: 0.6;
 }
+
 .me h2 {
   font-weight: bolder;
-  color: #fff;
+  color: #e4dafc;
   font-size: 52px;
   line-height: 1.2;
   opacity: 0.9;
 }
+
 .job_name {
-  color: #f9004d !important;
+  color: #f4385d !important;
 }
+
 .sideBar {
   background-color: #111;
   position: fixed;
@@ -43,16 +55,34 @@
   display: none;
   box-shadow: 1px 1px 10px #333;
 }
-.animate {
-}
-/* Media queries */
+
 @keyframes sideBar {
-  form {
+  from {
     transform: translateY(-20%);
   }
   to {
     transform: translateY(0);
   }
+}
+.button {
+  display: inline-flex;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: semi-bold;
+  text-transform: uppercase;
+  background-color: #323232;
+  color: #e3d9fd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #292929;
 }
 
 @media only screen and (max-width: 800px) {
@@ -60,6 +90,7 @@
     display: block;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .sideBar {
     display: block;

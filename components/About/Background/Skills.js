@@ -1,21 +1,19 @@
-import React, { useState } from 'react'
-const skills = ['Main skills', 'Awards', 'Experience', 'Education']
-import { mainSkills, awards, experience, eductionalBackground } from './data'
-import classes from './Skills.module.css'
-import Skill from './Skill'
-import SkillDescription from './SkillDescription'
+import React, { useState } from 'react';
+const skills = ['Main skills', 'Experience', 'Education'];
+import { mainSkills, experience, eductionalBackground } from './data';
+import classes from './Skills.module.css';
+import Skill from './Skill';
+import SkillDescription from './SkillDescription';
 
 export default function Skills() {
-  const [content, setContent] = useState(mainSkills)
+  const [content, setContent] = useState(mainSkills);
   function skillClickHandler(par) {
     if (par === 'Main skills') {
-      setContent(mainSkills)
-    } else if (par === 'Awards') {
-      setContent(awards)
+      setContent(mainSkills);
     } else if (par === 'Experience') {
-      setContent(experience)
+      setContent(experience);
     } else {
-      setContent(eductionalBackground)
+      setContent(eductionalBackground);
     }
   }
   return (
@@ -35,5 +33,5 @@ export default function Skills() {
         ))}
       </div>
     </div>
-  )
+  );
 }
